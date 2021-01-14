@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+    	body{
+    		 background-image: url('homeback.jpg');
+             background-repeat: no-repeat;
+             font-family: Open Sans;
+    	}
+    	button,input {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 10px 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+        }
+        th, td, p, input, h3 {
+            font:15px 
+        }
+        table, th, td {
+            border: solid 1px #ddd;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+	<h3>
+    	Click the button to get data of users.
+    </h3>
+    <input type='button' onclick='tableFromJson()' 
+    	value='Click here to see data' />
+        
+    <p id='showData'></p>
+    
+    <p id='msg'></p>
+
+   <form action="index.html">
+    <button>Logout</button>
+   </form>
+</body>
+<script src="home.js"></script>
+</html>

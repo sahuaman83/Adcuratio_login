@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Welcome to the Login Page!</h1>
+    <form action ="home.html" name="myForm" onsubmit="return validateForm()" method="post">
+
+        <div style="color:yellow;" class="formdesign" id="email">
+            Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" name="femail" required><b><span class="formerror"> </span></b>
+        </div>
+        <div style="color:yellow;" class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" required><b><span class="formerror"></span></b>
+        </div>
+
+        <input style="background-color: #4CAF50;  border: none;" class="but" type="submit" value="Login">
+
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
